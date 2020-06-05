@@ -1,0 +1,66 @@
+/* this css is for desktop view */
+.child1 {
+  float: left;
+  border:5px outset black;
+  background-image: url('images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  text-align: center;
+  width: 21%;
+  margin: 5% 15% 5% 5%;
+  box-shadow: 5px 5px 5px 5px #29282F;
+  border-radius: 3%;
+}
+
+
+.child2{
+  border: 1px outset black;
+  text-align: left;
+  width: 50%;
+  padding: 0% 0% 0% 1%;
+  background-color: #DBDBDB;
+
+}
+
+
+.parent{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* mobile view */
+@media screen and (min-width:320px) and (max-width:480px)
+{
+  .child1 {
+    float: left;
+    border:5px outset black;
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    width: 90%;
+    margin: 2% 2% 2% 2%;
+    box-shadow: 2% 2% 2% 2%; #29282F;
+    border-radius: 3%;
+  }
+
+  .parent{
+    display: inline;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+
+  .child2{
+    border: 1px outset black;
+    text-align: left;
+    width: 90%;
+    padding: 0% 0% 0% 1%;
+    margin: 2% 2% 2% 2%;
+    background-color: #DBDBDB;
+    word-wrap: break-word;
+
+  }
+  
+
+}

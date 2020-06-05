@@ -1,0 +1,35 @@
+/* css for index2.html */
+body{
+  background-color: #ABC2C4;
+}
+
+#parent{
+  background-color: #77989C;
+  margin: 10%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4%;
+}
+
+.child{
+background-color: #40949C;
+margin: 4%;
+width: 25%;
+text-align: center;
+border-radius: 5%; /*for curve shaped corners*/
+box-shadow: 4px 4px 4px 4px #ABC2C4 ; /*for shadowing*/
+}
+
+img{
+  width: 50%;
+  height: 50%;
+  margin: 5%;
+  border-radius: 50%
+}
+
+h2,h4{
+  font-size: 20px;
+}
+footer{
+  text-align: right;
+}
