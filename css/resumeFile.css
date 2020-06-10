@@ -1,66 +1,73 @@
-/* this css is for desktop view */
-.child1 {
+.left{
+  background-color: lightblue;
+  width: 20%;
   float: left;
-  border:5px outset black;
-  background-image: url('images/bg.jpg');
-  background-repeat: no-repeat;
-  background-size:100% 100%;
   text-align: center;
-  width: 21%;
-  margin: 5% 15% 5% 5%;
-  box-shadow: 5px 5px 5px 5px #29282F;
-  border-radius: 3%;
-}
-
-
-.child2{
-  border: 1px outset black;
-  text-align: left;
-  width: 50%;
-  padding: 0% 0% 0% 1%;
-  background-color: #DBDBDB;
+  border: 3px outset black;
+  margin-bottom: 17%;
 
 }
+.right{
+  background-color: lightpink;
+  width: 70%;
+  float: right;
+  padding-left: 1%;
+  border: 2px outset black;
 
+}
 
 .parent{
   display: flex;
   justify-content: space-between;
+
 }
 
-/* mobile view */
-@media screen and (min-width:320px) and (max-width:480px)
-{
-  .child1 {
-    float: left;
-    border:5px outset black;
-    background-image: url('images/bg.jpg');
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    text-align: center;
-    width: 90%;
-    margin: 2% 2% 2% 2%;
-    box-shadow: 2% 2% 2% 2%; #29282F;
-    border-radius: 3%;
-  }
 
+@media screen and (min-width:200px) and (max-width:480px){
+  .left{
+    width: 100%;
+    display: flex;
+    float: none;
+  }
+  .right{
+    width: 100%;
+    float: none;
+  }
   .parent{
-    display: inline;
-    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+  }
+  .leftText{
+    padding-top: 20%;
+  }
+}
+@media screen and (min-width:481px) and (max-width:720px){
+  .left{
+    width: 100%;
+      float: none;
+  }
+  .right{
+    width: 100%;
+      float: none;
+  }
+  .parent{
+    display: inline-block;
     justify-content: space-between;
   }
 
-
-  .child2{
-    border: 1px outset black;
-    text-align: left;
-    width: 90%;
-    padding: 0% 0% 0% 1%;
-    margin: 2% 2% 2% 2%;
-    background-color: #DBDBDB;
-    word-wrap: break-word;
-
+}
+@media screen and (min-width:721px) and (max-width:900px){
+  .left{
+    width: 27%;
+    float:right;
   }
-  
 
+  .right{
+    width: 70%;
+    float:left;
+  }
+  .parent{
+    display: inline-block;
+    justify-content: space-between;
+  }
 }
